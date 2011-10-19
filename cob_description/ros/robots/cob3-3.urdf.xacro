@@ -10,7 +10,7 @@
   <include filename="$(find cob_description)/ros/urdf/common.xacro" />
 
   <!-- calibration -->
-  <include filename="$(find cob_description)/ros/calibration/cob3-3.urdf.xacro" />
+  <include filename="$(find cob_description)/ros/calibration/$(optenv COB_CALIBRATION uncalibrated)/cob3-3.urdf.xacro" />
   
   <!-- base -->
   <include filename="$(find cob_description)/ros/urdf/base_v1/base.urdf.xacro" />	<!-- new version; platform_controller and platform_navigation not yet working -->
